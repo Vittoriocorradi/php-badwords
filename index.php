@@ -8,8 +8,13 @@
 </head>
 <body>
     <main>
-        <p><?php echo $_POST['paragraph'] ?></p>
-        <div><?php echo strlen($_POST['paragraph']) ?></div>
+        <section>
+            <p><?php echo $_POST['paragraph'] ?></p>
+            <div><?php echo strlen($_POST['paragraph']) ?></div>
+        </section>
+        <section>
+            <p><?php echo str_replace($_POST['bad_word'], '***', $_POST['paragraph']) ?></p>
+        </section>
     </main>
 </body>
 </html>
